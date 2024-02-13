@@ -1,26 +1,27 @@
 public class Pillers {
-    public static void main(String[] args) {
-        // Pillers of Java
+    public static void main(String args[]) {
+        // Pillers
         // (i) Encapsulation (ii) Inheritance (iii) Polymorphism (iv) Abstraction
-        
-        Fish shark = new Fish();
-        shark.eat();
+
+        Fish shark = new Fish(); // Inheritance
+        shark.eat(); // Animal's functiion this mean here happening Inheritance
+        shark.swim(); // Fish's function
     }
-    // Base Class (Parent class)
-    class Animal {
-        String color; // property
-        void eat() { // function
-            System.out.println("They eats...");
-        }
-        void breath() { // function
-            System.out.println("They breaths...");
-        }
+}
+// Base Class (Parent class)
+class Animal {
+    String color;
+    void eat() {
+        System.out.println("Eats...");
     }
-    // Derived Class (Child class)
-    class Fish extends Animal {
-        int fins; // property
-        void swim() { // function
-            System.out.println("They swims...");
-        }
+    void breath() {
+        System.out.println("Breaths...");
+    }
+}
+// Derived Class or SubClass (Child class)
+class Fish extends Animal {
+    int fins;
+    void swim() {
+        System.out.println("Swims...");
     }
 }
