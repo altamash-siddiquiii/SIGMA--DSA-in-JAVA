@@ -8,6 +8,7 @@ public class Pillers {
         shark.swim(); // Fish's function
     }
 }
+// (I) SINGLE LEVEL INHERITANCE - one base & one derived class
 // Base Class (Parent class)
 class Animal {
     String color;
