@@ -12,4 +12,4 @@ All codes of this repo is my class and practice codes which we uploaded on my Gi
 </ul>
 <br>
 <br>
-# Author : Mohd Altamish
+<h3><b>Author : Mohd Altamish<b><h3>
