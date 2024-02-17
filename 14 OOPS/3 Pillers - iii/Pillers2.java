@@ -9,6 +9,12 @@ public class Pillers2 {
         c.eat(); c.walk(); System.out.println(c.color);
         Mustang horse = new Mustang();
         // Animal -> Horse -> Mustang (Hierarchae constructor is calling line by line)
+
+        // (ii) Interfaces - (Multiple Inheritance & Total abstraction)
+        King k = new King();
+        k.moves();
+        Bear b = new Bear();
+        b.herbivoreFood(); b.carbivoreFood(); 
     }
 }
 // Abstraction
@@ -49,5 +55,39 @@ class Chicken extends Animal {
     }
     void walk() { // Compulsary to create method here of it's parent's class
         System.out.println("Walks on 2 legs.");
+    }
+}
+// (II) INTERFACES
+interface ChessPlayer {
+    void moves(); // All methods are Public, Abstract & Without implementation
+}
+class Queen implements ChessPlayer {
+    public void moves() {
+        System.out.println("Up, Down, Left, Right & Diagonal in all 4 direction.");
+    }
+}
+class King implements ChessPlayer {
+    public void moves() {
+        System.out.println("Up, Down, Left, Right & Diagonal (By 1 step).");
+    }
+}
+class Rook implements ChessPlayer {
+    public void moves() {
+        System.out.println("Up, Down, Left & Right.");
+    }
+}
+// HomeWork Problem
+interface Herbivore {
+    void herbivoreFood();
+}
+interface Carbivore {
+    void carbivoreFood();
+}
+class Bear implements Herbivore, Carbivore {
+    public void herbivoreFood() {
+        System.out.println("Herbivore eats grass.");
+    }
+    public void carbivoreFood() {
+        System.out.println("Carbivore eats meat.");
     }
 }
