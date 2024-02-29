@@ -1,4 +1,4 @@
-public class IsArrSorted {
+public class IsArrSorted { 
 
     public static void main(String args[]) {
 
