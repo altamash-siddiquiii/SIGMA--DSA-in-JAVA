@@ -7,8 +7,8 @@ public class LastOccur {
         int lastOccurance = findLqstOccurance(arr, 0, key); // searching from up to down
         int lastOccurance1 = findLastOccurance1(arr, arr.length-1, key); // searching from down to up
         if (lastOccurance != -1) {
-            System.out.println("(i) Last Occurance of "+key+" is found at index " + lastOccurance + ".");
-            System.out.println("(ii) Last Occurance of "+key+" is found at index " + lastOccurance1 + ".");
+            System.out.println("(i) Last Occurance of "+key+" is found at index : " + lastOccurance);
+            System.out.println("(ii) Last Occurance of "+key+" is found at index : " + lastOccurance1);
         } else {
             System.out.println(key + " is not found in the array.");
         }
