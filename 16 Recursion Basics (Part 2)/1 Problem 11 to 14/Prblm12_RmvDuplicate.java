@@ -14,13 +14,13 @@ public class Prblm12_RmvDuplicate {
         // Store current character
         char currChar = str.charAt(index);
         // Checking that currChar exists in the map array or not
-        if (map[currChar-'a'] == true) {
+        if (map[currChar - 'a'] == true) {
             // Duplicate found
             rmvDuplicates(str, index+1, newStr, map);
         }
         else {
             // No duplicate found
-            map[currChar-'a'] = true;
+            map[currChar - 'a'] = true;
             rmvDuplicates(str, index+1, newStr.append(currChar), map);
         }
     }
